@@ -1,18 +1,19 @@
 ﻿var
-  i, n, s, sum: integer;
-  a: real;
+sum, count, num: integer;
+x: real;
 
 begin
-  readln(n);
-  i := 0;
-  sum := 0;
-  s := 3;
-  while i <> n do
-  begin
-    sum := s + sum;
-    i := i + 1;
-    s := s + 6;
-  end;
-  a := sum / i;
-  writeln(a);
+sum := 0;
+count := 0;
+num := 3;
+
+while count < 10 do
+begin
+sum := sum + num;
+num := num + 6;
+count := count + 1;
+end;
+
+x := sum / count;
+writeln('Среднее арифметическое: ', x);
 end.
